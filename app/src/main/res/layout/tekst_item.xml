@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#09093D">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/pao"
+        android:background=""
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ime"
+            android:layout_weight="2"
+            android:background="#149DFF"
+            android:gravity="center"
+            android:hint="ime liječnik"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/prezime"
+            android:background="#149DFF"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="prezime liječnika"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termin"
+        app:layout_constraintTop_toBottomOf="@id/pao"
+        android:text="Vrijeme termina :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#149DFF"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/vrijeme"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/vrijeme"
+        android:gravity="left"
+        android:hint="vrijeme"
+
+        android:textColorHint="FFFFFF"
+        android:background="#149DFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/pao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/termin"
+        app:layout_constraintRight_toLeftOf="@id/pocent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pocent"
+        app:layout_constraintTop_toBottomOf="@id/pao"
+        android:text="ime pacijenta :"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#149DFF"
+
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/vrijeme"
+        app:layout_constraintRight_toLeftOf="@id/pacjent"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pacjent"
+        android:background="#149DFF"
+        app:layout_constraintTop_toBottomOf="@id/pao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#FFFFFF"
+        android:gravity="left"
+        android:hint="pacijent"
+        app:layout_constraintLeft_toRightOf="@id/pocent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

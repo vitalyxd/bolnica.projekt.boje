@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "116554284350",
+    "project_id": "bonica-5eece",
+    "storage_bucket": "bonica-5eece.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116554284350:android:852ee7fa5d2cdbe0a4406f",
+        "android_client_info": {
+          "package_name": "com.example.bolnica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6FzB2sVkNqB3Sr2Zy0UsJSP4KHuWxXDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
